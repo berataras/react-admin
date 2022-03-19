@@ -1,0 +1,12 @@
+@import "../../styles/utils/theme";
+@import "../../styles/utils/alignment";
+
+.chart{
+  @include boxShadow;
+  padding: 20px;
+  margin: 20px 0;
+
+  .chartTitle {
+    margin-bottom: 20px;
+  }
+}
