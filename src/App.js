@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 //global css
 import './styles/global.css'
 //pages
-import {Home, Users, UserUpdate, UserCreate} from "./pages";
+import {Home, Users, UserUpdate, UserCreate, Product, ProductCreate} from "./pages";
 import {Context} from "./context/Context";
 import {useState} from "react";
 
@@ -21,6 +21,8 @@ function App() {
                         <Route exact path="/users" component={Users} />
                         <Route exact path="/users/create" component={UserCreate} />
                         <Route exact path="/users/:id" component={UserUpdate} />
+                        <Route exact path="/products/create" component={ProductCreate} />
+                        <Route exact path="/products/:id" component={Product} />
                     </Switch>
                 </div>
             </Router>

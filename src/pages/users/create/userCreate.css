@@ -3,50 +3,9 @@
   flex-wrap: wrap;
   flex-direction: column;
 }
-.createUser .createUserForm .createUserItem {
-  width: 400px;
+.createUser .createUserForm .createUserFormItem {
   display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  margin-right: 20px;
-}
-.createUser .createUserForm .createUserItem > label {
-  margin-bottom: 10px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #979696;
-}
-.createUser .createUserForm .createUserItem > input {
-  height: 20px;
-  padding: 20px 10px;
-  border: 1px solid gray;
-  border-radius: 5px;
-}
-.createUser .createUserForm .createUserItem .createUserGender > input {
-  margin-top: 15px;
-}
-.createUser .createUserForm .createUserItem .createUserGender > label {
-  margin: 10px;
-  font-size: 18px;
-  color: #555;
-}
-.createUser .createUserForm .createUserItem .createUserSelect {
-  height: 40px;
-  border-radius: 5px;
-  border: 1px solid darkblue;
-  padding: 0 10px;
-}
-.createUser .createUserForm .createUserButton {
-  width: 200px;
-  height: 50px;
-  border: none;
-  background-color: darkblue;
-  color: white;
-  padding: 7px 10px;
-  font-weight: 600;
-  border-radius: 10px;
-  margin-top: 30px;
-  cursor: pointer;
+  margin: 10px 0;
 }
 
 /*# sourceMappingURL=userCreate.css.map */

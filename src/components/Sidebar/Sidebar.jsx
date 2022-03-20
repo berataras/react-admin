@@ -23,7 +23,6 @@ function Sidebar() {
 
     useEffect(() => {
         const allNav = document.querySelectorAll(".sidebarListItem");
-        console.log(allNav)
         allNav.forEach(nav => {
             nav.addEventListener('click', () => {
                 setValue('')

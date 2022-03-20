@@ -1,54 +1,30 @@
 import "./userCreate.css"
 import Layout from "../../layout/Layout";
+import {PageHeader, CustomInput, CustomSelect, CustomRadio, CustomButton} from "../../../components";
 
-function UserCreate(props) {
+function UserCreate() {
+    const customSelectOptions = [
+        {value: 'yes', text: 'Yes'},
+        {value: 'no', text: 'No'},
+    ];
     return (
         <Layout className="createUser">
-            <h1 className="createUserTitle">New User</h1>
+            <PageHeader title="New User" buttonActive={false} />
             <form className="createUserForm">
-                <div className="createUserItem">
-                    <label>Username</label>
-                    <input type="text" placeholder="john"/>
+                <CustomInput label="Username" placeholder="john" />
+                <CustomInput label="Full Name" placeholder="John Walker" />
+                <CustomInput label="Email" placeholder="john@gmail.com" type="email" />
+                <CustomInput label="Password" placeholder="****" type="password" />
+                <CustomInput label="Phone" placeholder="+1 123 456 78" />
+                <CustomInput label="Address" placeholder="New York | USA" />
+
+                <div className="createUserFormItem">
+                    <CustomRadio name="gender" id="male" label="male" />
+                    <CustomRadio name="gender" id="males" label="males" />
                 </div>
-                <div className="createUserItem">
-                    <label>Full Name</label>
-                    <input type="text" placeholder="John Smith"/>
-                </div>
-                <div className="createUserItem">
-                    <label>Email</label>
-                    <input type="email" placeholder="john@gmail.com"/>
-                </div>
-                <div className="createUserItem">
-                    <label>Password</label>
-                    <input type="password" placeholder="password"/>
-                </div>
-                <div className="createUserItem">
-                    <label>Phone</label>
-                    <input type="text" placeholder="+1 123 456 78"/>
-                </div>
-                <div className="createUserItem">
-                    <label>Address</label>
-                    <input type="text" placeholder="New York | USA"/>
-                </div>
-                <div className="createUserItem">
-                    <label>Gender</label>
-                    <div className="createUserGender">
-                        <input type="radio" name="gender" id="male" value="male"/>
-                        <label htmlFor="male">Male</label>
-                        <input type="radio" name="gender" id="female" value="female"/>
-                        <label htmlFor="female">Female</label>
-                        <input type="radio" name="gender" id="other" value="other"/>
-                        <label htmlFor="other">Other</label>
-                    </div>
-                </div>
-                <div className="createUserItem">
-                    <label>Active</label>
-                    <select className="createUserSelect" name="active" id="active">
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
-                </div>
-                <button className="createUserButton">Create</button>
+
+                <CustomSelect label="Active" options={customSelectOptions} />
+                <CustomButton text="Create" />
             </form>
         </Layout>
     );

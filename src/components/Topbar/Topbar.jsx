@@ -6,7 +6,7 @@ function Topbar(props) {
         <div className="topbar">
             <div className="topbarWrapper">
                 <div className="topLeft">
-                    <span className="logo">aras | admin</span>
+                    <span className="logo">react | admin</span>
                 </div>
                 <div className="topRight">
                     <div className="topbarItem">

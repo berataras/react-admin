@@ -5,7 +5,7 @@ import { userRows } from "../../api/dummyData";
 import {DeleteOutline} from "@mui/icons-material";
 import { Link } from 'react-router-dom'
 
-function Table() {
+function Table({title}) {
     const [data, setData] = useState(userRows);
 
     const handleDelete = (id) => {
@@ -48,7 +48,7 @@ function Table() {
     ];
     return (
         <div className="table">
-            <h3 className="tableTitle">Users</h3>
+            <h3 className="tableTitle">{title}</h3>
             <DataGrid
                 rows={data}
                 disableSelectionOnClick
